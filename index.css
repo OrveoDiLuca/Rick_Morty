@@ -1,0 +1,120 @@
+:root{
+    --color_verde:rgb(151,206,76);
+    --color_amarillo:rgb(240,225,74);
+    --color_azul:rgb(178,218,237);
+    --color_morazul:rgb(155,170,242);
+    --color_rosado:rgb(232,154,199);
+    --color_verdjerry:#045316;
+    --color_bethrojo:#db0b0b;
+}
+
+body{
+    font-family: Silkscreen;
+    background-color: black;
+    background-image: url("/Images/bartek-garbowicz-xJeCLqsBUqc-unsplash.webp");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    letter-spacing: 1px;
+}
+
+h1{
+    color: var(--color_verde);
+}
+
+@media(min-width:350px){
+    h1{
+        font-size: 90px;
+        text-align: center;
+    }
+}
+
+@media(min-width:350px){
+    .navegacion1{
+        text-align: center;
+        margin: 100px 40px 100px 0;
+    }
+}
+
+.navegacion1{
+    text-shadow: 2px 2px 2px var(--color_morazul);
+}
+
+nav > ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    font-size: 19px;
+    display: inline;
+    margin: 0 10px 0 0;
+}
+
+li > a{
+    color: var(--color_morazul);
+}
+
+p,h2{
+    color: var(--color_verde);
+}
+               
+.Rick > p{
+    color:var(--color_azul);
+}
+
+@media(min-width:350px){
+    .Imagen{
+        width: 50%;
+        height: 45%;
+        display: flex;
+        margin: 30px 0 30px 0px;
+        padding: 10px 30px 10px 30px;
+    }
+}
+
+.Imagen > img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.Imagen > img:hover{
+    cursor: pointer;
+    width: 30%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+.animate__animated.animate__rotateInDownLeft{
+    animation-duration: 800ms;
+    animation-delay: 3000ms;
+}
+
+.Morty > p{
+    color: var(--color_amarillo);
+}
+
+.Summer > p{
+    color: var(--color_rosado);
+}
+
+.Jerry > p{
+    color: var(--color_verdjerry);
+}
+
+.Beth > p{
+    color: var(--color_bethrojo);
+}
+
+.pIE{
+    padding: 30px;
+    background-color: black;
+    height: 50px;
+    margin-bottom:0;
+    margin-left: 0;
+    text-align: center;
+}
